@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSVP Pernikahan Rina & Dimas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="content">
+    <h1>Konfirmasi Kehadiran</h1>
+    <form id="rsvpForm">
+      <input type="text" id="name" placeholder="Nama Anda" required />
+      <select id="status" required>
+        <option value="">Konfirmasi Kehadiran</option>
+        <option value="Hadir">Hadir</option>
+        <option value="Tidak Hadir">Tidak Hadir</option>
+      </select>
+      <input type="number" id="jumlah" placeholder="Jumlah Tamu" min="1" required />
+      <button type="submit" class="btn">Kirim RSVP</button>
+    </form>
+    <div id="thanksMessage" style="display: none;">
+      <h2>Terima kasih telah mengisi RSVP! 💌</h2>
+    </div>
+    <div class="whatsapp-share">
+      <h3>Bagikan Undangan ke WhatsApp</h3>
+      <a id="whatsappBtn" href="#" target="_blank">📤 Bagikan Sekarang</a>
+    </div>
+  </div>
+  <script src="js/form.js"></script>
+</body>
+</html>
